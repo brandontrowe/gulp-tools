@@ -1,5 +1,10 @@
 # gulp-tools
 Misc scripts to handle repetitive functions
 
-## clean-file-name
+## Install
+Download and run `npm install` in the root directory
+
+------
+
+### /clean-file-name
 Removes common unwanted characters from filenames and resaves the file
