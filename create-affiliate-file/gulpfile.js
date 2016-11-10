@@ -49,7 +49,7 @@ const convertToYml = (obj_arr, cb) => {
     let source = '';
 
     yml += '---' + nl;
-    yml += 'affiliates: ' + nl;
+    yml += 'Affiliates: ' + nl;
 
     for(let i = 0; i < obj_arr.length; i++) {
         if(obj_arr[i].source != source) {
@@ -67,8 +67,8 @@ const convertToYml = (obj_arr, cb) => {
 const saveYml = (yml) => {
     let fileArr = config.fileName.split('.');
     let fileName = fileArr[0] + '.' + 'yml';
-    fs.writeFile(config.filePath + fileName, yml, 'utf8', function(){
-        console.log('File written');
+    fs.writeFile(config.destPath + fileName, yml, 'utf8', function(){
+        console.log('File written: ' + config.destPath + fileName);
     })
 }
 
