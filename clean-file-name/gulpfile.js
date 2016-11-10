@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const rename = require('gulp-rename');
 
 const settings = {
-    srcFolder: './', // source folder of the files to be cleaned
+    srcFolder: 'C:/', // source folder of the files to be cleaned
     destFolder: 'clean' // relative to srcFolder; set to '' to have the files saved in the same folder
 }
 
