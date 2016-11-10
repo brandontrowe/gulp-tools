@@ -25,22 +25,22 @@ const convertToObj = (arr, cb) => {
     let obj_arr = [];
     let headers = arr[0].split(',');
     for(let i = 1; i < arr.length; i++) {
-      let data = arr[i].split(',');
-      let obj = {};
-      for(let j = 0; j < data.length; j++) {
-         obj[headers[j].trim()] = data[j].trim();
-      }
-      obj_arr.push(obj);
+        let data = arr[i].split(',');
+        let obj = {};
+        for(let j = 0; j < data.length; j++) {
+            obj[headers[j].trim()] = data[j].trim();
+        }
+        obj_arr.push(obj);
     }
     cb(obj_arr);
 }
 
 const compare = (a,b) => {
-  if (a.source < b.source)
+    if (a.source < b.source)
     return -1;
-  if (a.source > b.source)
+    if (a.source > b.source)
     return 1;
-  return 0;
+    return 0;
 }
 
 const convertToYml = (obj_arr, cb) => {
