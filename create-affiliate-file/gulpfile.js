@@ -49,6 +49,7 @@ const convertToYml = (obj_arr, cb) => {
     let source = '';
 
     yml += '---' + nl;
+    yml += 'LocallyModified: 1' + nl;
     yml += 'Affiliates: ' + nl;
 
     for(let i = 0; i < obj_arr.length; i++) {
